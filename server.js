@@ -9,6 +9,7 @@ const helpers = require('./utils/helpers');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const calorieRoutes = require('./controllers/api/calorieroutes');
 const workoutRoutes = require('./controllers/api/workoutRoutes');
+const cors = require('cors');
 
 const Sequelize = require('sequelize');
 

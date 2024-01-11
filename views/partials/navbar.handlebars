@@ -2,6 +2,17 @@
     <div class="title">Clima-Fit Diary</div>
     <div class="login-signup">
         {{#if logged_in}}
+        <div class="weatherbar">
+    <h3>Weather</h3>
+    <form class="weatherform">
+        <input id="weathersearch" type="text"><button type="submit" class="search-weather">Submit</button>
+    </form>
+    <div>
+            <h4>Description</h4><p class="weathercard"></p> <img src="" alt="weathericon" class="weathericon"> 
+        <h4>Temperature</h4> <img src="" alt="Farenheit">
+    <p class="temperature"></p>
+    </div>
+    </div>
             <button class="btn btn-primary" id="logoutButton">Logout</button>
         {{else}}
             <button class="btn btn-primary" data-toggle="modal" data-target="#modalLoginForm">Log In</button>
